@@ -1,0 +1,12 @@
+#!/bin/bash 
+
+VAR=$(lscpu | grep "Vendor ID: " | cut -d ":" -f2) 
+
+if [ x$VAR -eq x"GenuineIntel" ]
+then
+   echo "Seu procesador e Intel"
+else
+   echo " Seu processador nao "
+fi 
+
+
