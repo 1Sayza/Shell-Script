@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo " Informe o seu ano de nascimento: "
+read num
+
+VAR=$(expr 2022 - $num)
+echo " voce possui $VAR anos de idade" 
+
+

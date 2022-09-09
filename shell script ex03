@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo -n "Diretorio : "
+read DIR
+echo -n "Nome do arquivo : "
+read FILENAME
+tar -cvzf $FILENAME $DIR
