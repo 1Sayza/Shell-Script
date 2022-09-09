@@ -1,0 +1,10 @@
+#!/bin/bash 
+
+VAR=$(df -h | grep overlay | awk '{print $5}' | cut -d "%" -f1)
+
+if [ $VAR -gt 75 ]
+then
+   echo "$(date +'%Y-%m-%d %H:%M:%S') - OCUPACAO DO DISCO ACIMA DO LIMITE DE $VAR%"
+else
+   echo "O parametro esta ok"
+fi
