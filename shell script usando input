@@ -1,0 +1,13 @@
+#!/bin/bash 
+
+echo " Informe um numero: "
+read num
+
+i=$num
+
+while [ $i -gt 0 ] 
+do
+  echo $i
+  i=$[ $i -1]
+done
+   echo 'Feliz ano novo' 
