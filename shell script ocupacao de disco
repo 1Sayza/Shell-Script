@@ -1,4 +1,5 @@
 #!/bin/bash 
+# O código tem a finalidade de mostrar uma mensagem caso o espaço do disco passe do valor determinado. Assim a mensagem irá imprimir a data na hora junto com os minutos e os segundos.
 
 VAR=$(df -h | grep overlay | awk '{print $5}' | cut -d "%" -f1)
 

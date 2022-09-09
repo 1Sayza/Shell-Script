@@ -1,4 +1,5 @@
 #!/bin/bash 
+# O código tem a finalidade simples, porém ele te ajudará caso queira isolar uma informação de uma determinada linha e coluna como forma de parâmetro. A lógica podes-e ser aplicada em outros aspectos de isolação de informação.
 
 VAR=$(lscpu | grep "Vendor ID: " | cut -d ":" -f2) 
 
